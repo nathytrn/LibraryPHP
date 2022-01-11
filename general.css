@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  /* Does NOT work on Safari */
+  /* scroll-behavior: smooth; */
+}
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.primary,
+.secondary {
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.primary {
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.secondary {
+  color: #333;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+.card {
+  display: flex;
+}
+.left {
+  display: flex;
+  flex: 0.7;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.right {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 20rem;
+}
+p {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+span {
+  font-weight: 300;
+  color: #aaa;
+}
+
+a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: blue;
+}
