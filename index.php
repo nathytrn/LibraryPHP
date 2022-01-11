@@ -11,17 +11,15 @@
 </head>
 <body>   
     <?php 
+    //Getting JSON
     $url = "https://prosentient.intersearch.com.au/cgi-bin/koha/svc/report?id=1&annotated=1";
     $json = file_get_contents($url);
     $json_data = json_decode($json, true);
-
-    foreach($json_data as $item) { //foreach element in $arr
-        $item['author']; //etc
-    
-    }?>
+    ?>
 
     <div class ="container">
         <div class ="content">
+            <!-- Looping through JSON -->
             <?php foreach($json_data as  $item): ?>
                 <div class ="card">
                     <div class="left">
@@ -31,7 +29,7 @@
                         <h2 class="secondary">
                             <?= $item['Subjects']; ?>
                         </h2>
-
+                        <!-- Checking if content is available and display if yes -->
                         <?php if($item['author']) : ?>
                             <p>by <b><?= $item['author']; ?></b>. <p>
                         <?php endif; ?>
