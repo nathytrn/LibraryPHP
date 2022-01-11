@@ -23,7 +23,7 @@
             <?php foreach($json_data as  $item): ?>
                 <div class ="card">
                     <div class="left">
-                        <a class="primary" href="#"> 
+                        <a class="primary" href="<?php echo $item['biblionumber']; ?>"> 
                             <?= $item['title']; ?>
                         </a>
                         <h2 class="secondary">

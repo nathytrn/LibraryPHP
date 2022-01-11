@@ -85,10 +85,15 @@ span {
   color: #aaa;
 }
 
+a {
+  color: #0077b6;
+}
+
 a:hover {
-  background-color: transparent;
+  color: #03045e;
   text-decoration: underline;
 }
-a:visited {
-  color: blue;
+
+a:active {
+  color: #0077b6;
 }
