@@ -56,6 +56,16 @@ html {
   font-size: 1.8rem;
   line-height: 1.2;
 }
+
+a {
+  color: #0077b6;
+}
+
+a:hover {
+  color: #03045e;
+  text-decoration: underline;
+}
+
 .card {
   display: flex;
 }
@@ -83,17 +93,4 @@ p {
 span {
   font-weight: 300;
   color: #aaa;
-}
-
-a {
-  color: #0077b6;
-}
-
-a:hover {
-  color: #03045e;
-  text-decoration: underline;
-}
-
-a:active {
-  color: #0077b6;
 }
